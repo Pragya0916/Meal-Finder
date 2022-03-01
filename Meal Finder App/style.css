@@ -1,0 +1,143 @@
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    color: rgb(218, 215, 211);
+}
+#container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: linear-gradient(to bottom, rgba(48, 45, 45, 0.6), rgba(58, 57, 57, 0.6)), url(meal.webp); 
+    background-size: cover;
+    background-repeat: no-repeat; 
+}
+#main-meal-box {
+    width: 40vw;
+}
+#heading{
+    font-size: 2rem;
+    text-align: center;
+    color: rgb(218, 215, 211);
+    font-weight: 400;
+    margin: 2rem;
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+
+}
+/* #child-meal-box{
+   width: 40vw;
+} */
+#inputMsg{
+    outline: none;
+    border: none;
+    width: 60%;
+  background-color :rgb(255, 251, 246);
+    color: black;
+    height: 4.7vh;
+    font-size: 1.1rem;
+    border-radius: 10px;
+    padding: 2px 7px;
+    text-transform: capitalize;
+}
+button{
+    height: 5.5vh;
+    cursor: pointer;
+    border-radius: 9px;
+    margin-top: auto;
+}
+
+ #searchBtn{
+    width: 2.8vw; 
+     background: none; 
+    outline: none;
+    font-size: 14px; 
+    /* /margin-top: 2rem;  */
+ }
+ #randomBtn {
+    width: 6vw;
+    color: rgb(54, 50, 50);
+   font-size: 12px; 
+   font-weight: 700;
+    padding: 2px 2px; 
+    background-color: rgb(245, 225, 225);
+    border: 1px solid rgb(236, 168, 168);
+  
+} 
+
+#randomBtn:hover{
+    background: rgb(255, 251, 246);
+    color: black;
+}
+
+#result{
+    display: grid;
+    grid-template-columns: repeat(4,2fr);
+    width: 90vw;
+    gap: 10px;
+    padding-bottom: 2rem;
+}
+.card{
+    position: relative;
+    margin-top: 2rem;
+    border-radius: 20px;
+    overflow: hidden;
+    height: 17rem;
+    /* width: 20vw; */
+}
+h3{
+    margin:1rem;
+    text-transform: capitalize;
+    text-align: center;
+}
+.text{
+    display: none;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(rgba(61, 58, 58, 0.808), rgba(128, 128, 128, 0.726));
+    top: 0%;
+    text-align: center;
+    cursor: pointer;
+    transition: all 8s;
+}
+.card:hover .text{
+    display: block;
+}
+
+.text p{
+    background: none;
+    margin-top: 8rem;
+    letter-spacing: 1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    line-height: 2rem;
+}
+
+.card img{
+   width: 100%;
+   height: 100%;
+}
+
+.textMsg{
+    text-align: center;
+    margin-top: 10rem;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+.randomBtn{
+    color: blanchedalmond;
+    border: 1px solid blanchedalmond;
+    border-radius: 10%;
+    padding: 6px;
+    text-transform: uppercase;
+    transition: all 1s;
+}
+
+.randomBtn:hover{
+    background: blanchedalmond;
+    color: black;
+    font-weight: 700;
+}

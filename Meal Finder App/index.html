@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Meal Finder-Search Your Meal</title>
+  </head>
+  <body>
+    <section id="container">
+      <section id="main-meal-box">
+        <h1 id="heading">Search Your Meal</h1>
+
+        <section id="child-meal-box">
+          <form id="form">
+            <input
+              type="text"
+              id="inputMsg"
+              placeholder="Searh for Meal.."
+              value=""
+            />
+            <button id="searchBtn" type="submit">🔍</button>
+            <button id="randomBtn">Random Meal</button>
+          </form>
+        </section>
+
+        <h2 id="alertMsg"></h2>
+      </section>
+      <div id="result"></div>
+      <div class="textMsg"></div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
